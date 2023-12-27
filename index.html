@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RajlaxmiUjalambe-RESUME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="navi">
+                <ul>
+                    <li class="navitem"><a href="#header">HOME</a></li>
+                    <li class="navitem"><a href="#about">ABOUT</a></li>
+                    <li class="navitem"><a href="#internship">INTERNSHIP</a></li>
+                    <li class="navitem"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>        
+        <div class="header-text">
+            <h1> Helloo..!!<br> 
+            I'm <span>Rajlaxmi Ujalambe.</span></h1>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div id="container">
+            <div id="row">
+                <div id="about-col-1">
+                    <img src="">
+                </div>
+                <div id="about-col-2">
+                    <h1 class="sub-title">ABOUT</h1>
+                    <p class="mini-titles">Here is my introduction..</p>
+                    <p>I'm an enthusiastic and driven student, currently pursuing a B.Tech degree in ENTC Engineering at 
+                    Walchand Institute of Technology. <br> My coursework has equipped me with a strong foundation
+                    and I'm constantly seeking opportunities to expand my skill set. <br> My dedication to excellence
+                    is evident in my commitment to maintaining a 9.50 CGPA in every semester. <br>
+                    Additionally, I have gained practical experience through internships. <br>
+                    Beyond my academic, I'm honest, sincere, dedicated and a creative person.</p>
+                </div>
+                <div class="tb-title">
+                    <p class="tb-lnks active-lnk" onclick="opntb('ed')">EDUCATION</p>
+                    <p class="tb-lnks" onclick="opntb('skl')">HARD SKILLS</p>
+                    <p class="tb-lnks" onclick="opntb('sskl')">SOFT SKILLS</p>
+                </div>
+                <div class="tb-contents active-tb" id="ed">
+                    <ul>
+                        <li>2023 Currently<span><strong> B.Tech(ENTC)</strong></span> at WIT Solapur.</li>
+                        <li>2021 completed<span><strong> HSC</strong></span> from Sangmeshwar College Solapur.</li>
+                        <li>2019 completed<span><strong> SCC</strong></span> from LFC High School Solapur.</li>
+                    </ul>
+                </div>   
+                <div class="tb-contents" id="skl">
+                    <ul>
+                        <li><span><strong>C, C++, Java</strong></span> programming language</li>
+                        <li><span><strong>DSA</strong></span></li>
+                        <li><span><strong>Front-End</strong></span> web developing</li>
+                    </ul>
+                </div> 
+                <div class="tb-contents" id="sskl">
+                    <ul>
+                        <li><span><strong>Determinant</strong></span> & <strong><span>Consistent</strong></span></li>
+                        <li><span><strong>Quick Learner</strong></span></li>
+                        <li><span><strong>Good Communication</strong></span> skill.</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script>
+        var tblnks = document.getElementsByClassName("tb-lnks");
+        var tbcontents = document.getElementsByClassName("tb-contents");
+        function opntb(tbname){
+            for(tblnk of tblnks){
+                tblnk.classList.remove("active-lnk");
+            }
+            for(tbcontent of tbcontents){
+                tbcontent.classList.remove("active-tb");
+            }
+            event.currentTarget.classList.add("active-lnk");
+            document.getElementById(tbname).classList.add("active-tb")
+        }
+    </script>
+    
+    <div id="internship">
+       <div id="container">
+            <div class="intern">
+                <h1 class="sub-title1">INTERNSHIP & CERTIFICATIONS</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <a href="IOT intern.html"><img src="images/intern.jpg" alt="internship" width="300" height="200"></a>
+                        <div class="layer">
+                            <a href="IOT intern.html"><i class="fa fa-external-link" style="font-size:24px"></i></a>
+                        </div>                    
+                    </div>
+                    <div class="work">
+                        <a href="intern and certi.html"><img src="images/certi.jpg" alt="certifiate" width="300" height="200"></a>
+                        <div class="layer">
+                           <a href="intern and certi.html"><i class="fa fa-external-link" style="font-size:24px"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="resmtxt">Click on the button to download Resume.</p>
+                <a href="images/Resume.pdf" download><button type="button" class="btn">Resume</button></a>
+            </div>
+       </div>
+    </div>
+
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p class="mini-titles">YOU CAN FIND ME ON</p>
+                <div class="social-icons">
+                    <p><i class="fa fa-envelope"></i><em>rajlaxmiujalambe@gmail.com</em></p>
+                    <a href="https://www.linkedin.com/in/rajlaxmi-ujalambe-401960236/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/RajlaxmiUjalambe"><i class="fa fa-github"></i></a>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
