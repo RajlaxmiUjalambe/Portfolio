@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>RajlaxmiUjalambe-RESUME</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,12 +10,12 @@
 </head>
 <body>
     <div id="header">
-        <div class="container">
-            <nav class="navi">
+        <div class="containr">
+            <nav>
                 <ul>
                     <li class="navitem"><a href="#header">HOME</a></li>
                     <li class="navitem"><a href="#about">ABOUT</a></li>
-                    <li class="navitem"><a href="#internship">INTERNSHIP</a></li>
+                    <li class="navitem"><a href="#projects">PROJECT</a></li>
                     <li class="navitem"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
@@ -57,16 +56,17 @@
                 </div>   
                 <div class="tb-contents" id="skl">
                     <ul>
-                        <li><span><strong>C, C++, Java</strong></span> programming language</li>
-                        <li><span><strong>DSA</strong></span></li>
+                        <li>programming language <span><strong>C, DSA</strong></span> </li>
                         <li><span><strong>Front-End</strong></span> web developing</li>
+                        <li>Operating System : <span><strong>Linux</strong></span></li>
+                        <li>Cloud Technology : <span><strong>AWS</strong></span></li>
                     </ul>
                 </div> 
                 <div class="tb-contents" id="sskl">
                     <ul>
                         <li><span><strong>Determinant</strong></span> & <strong><span>Consistent</strong></span></li>
                         <li><span><strong>Quick Learner</strong></span></li>
-                        <li><span><strong>Good Communication</strong></span> skill.</li>
+                        <li><span><strong>Good Communication</strong></span></li>
                     </ul>
                 </div> 
             </div>
@@ -86,30 +86,31 @@
             document.getElementById(tbname).classList.add("active-tb")
         }
     </script>
-    
-    <div id="internship">
-       <div id="container">
-            <div class="intern">
-                <h1 class="sub-title1">INTERNSHIP & CERTIFICATIONS</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <a href="IOT intern.html"><img src="images/intern.jpg" alt="internship" width="300" height="200"></a>
-                        <div class="layer">
-                            <a href="IOT intern.html"><i class="fa fa-external-link" style="font-size:24px"></i></a>
-                        </div>                    
-                    </div>
-                    <div class="work">
-                        <a href="intern and certi.html"><img src="images/certi.jpg" alt="certifiate" width="300" height="200"></a>
-                        <div class="layer">
-                           <a href="intern and certi.html"><i class="fa fa-external-link" style="font-size:24px"></i></a>
-                        </div>
+
+<div id="projects">
+    <div class="container">
+        <div class="intern">
+            <h1 class="sub-title1">PROJECTS</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="layer">
+                        <h3>RESCUE EYE</h3>
+                        <p>Survellience bot for disaster management.</p>
+                        <a href="project1.html" class="btn">View Project</a>
+                    </div>                    
+                </div>
+                <div class="work">
+                    <div class="layer">
+                        <h3>HOME AUTOMATION SYSTEM</h3>
+                        <p>Virtually implemented IoT based Home Automation System.</p>
+                        <a href="project2.html" class="btn">View Project</a>
                     </div>
                 </div>
-                <p class="resmtxt">Click on the button to download Resume.</p>
-                <a href="images/Resume.pdf" download><button type="button" class="btn">Resume</button></a>
             </div>
-       </div>
+        </div>
     </div>
+</div>
+
 
    <div id="contact">
     <div class="container">
