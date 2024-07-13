@@ -7,7 +7,6 @@
 
 html{
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -16,6 +15,7 @@ body{
     background-size: cover;
     color: white;
     padding-bottom: 50px;
+    aspect-ratio: 4/3;
 }
 
 #header{
@@ -43,6 +43,9 @@ ul li span{
 /*navigation*/
 .navitem{
     float: left;
+}
+nav ul{
+    color: black;
 }
 nav ul li{
     display: inline-block;
@@ -190,74 +193,77 @@ nav ul li a:hover::after{
     transform: translateY(-5px);
 }
 
-/*INTERNSHIP*/
-#internship{
-    padding-top: 35px;
+#projects {
+    padding-top: 25px;
+    background-color: transparent; /* Adjust as needed */
+    color: aliceblue;
 }
-.sub-title1{ /*intern title*/
+
+#projects .container {
+    text-align: left;
+}
+
+#projects .intern {
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#projects .sub-title1 {
     font-size: 40px;
     font-weight: 600;
     color: #8030a0;
 }
-.work-list{
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
+
+#projects .work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 50px;
 }
-.work{
+
+#projects .work {
     border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
     position: relative;
-    overflow: hidden;
-    float: left;
-    width: 48%;
-    padding: 6px;
-}
-.work:hover{
-    transform: scale(0.9);
-}
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-}
-.layer{
-    width: 0.5%;
-    height: 18%;
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
+    width: 310px;
+    height: 210px; /* Adjust height as needed */
+    background-color: transparent; /* Background color for each project box */
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding: 0 40px;
+    justify-content: center;
 }
-.layer a{
-    color: white;
-}
-.resmtxt{
+
+#projects .layer {
     text-align: center;
-    font-size: 20px;
-    font-style: italic;
-    color: #ad6bc7;
+    padding: 20px;
 }
-.btn{
-    font-size: 24px;
-    margin: 0 0% 0 45%;
-    display: inline-block;
-    color:lavenderblush;
-    background: #8030a0;
-    padding: 8px 40px;
+
+#projects .layer h3 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#projects .layer p {
+    font-size: 19px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#projects .btn {
     font-size: 18px;
-    margin-top: 8px;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: 0.5s;
+    color: #ffffff;
+    background-color: #8030a0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
-.btn:hover{
-    font-weight: bold;
-    color: black;
+
+#projects .btn:hover {
+    color: #000000;
+    font-weight: bolder;
+    background-color: #fafafa;
 }
