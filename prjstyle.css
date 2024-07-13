@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(images/webbackgrnd1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    aspect-ratio: 4/3;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Project Details Section */
+#project-details {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.project-details-content {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.project-details-content h2 {
+    color: #8030a0;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.project-details-content p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Video Section */
+.video-container {
+    margin-top: 20px;
+    display: flex; /* Add this */
+    justify-content: center;
+    align-items: center; /* Center vertically as well */
+}
+
+.video-container video {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: block; /* Ensure video is block-level */
+    margin: auto; /* Center horizontally */
+}
