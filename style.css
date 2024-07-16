@@ -210,7 +210,8 @@ nav ul li a:hover::after{
 }
 
 #projects .sub-title1 {
-    font-size: 40px;
+    text-align: center;
+    font-size: 60px;
     font-weight: 600;
     color: #8030a0;
 }
